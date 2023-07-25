@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+  }
+  
+  /* App container styles */
+  .min-h-screen {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Header styles */
+  .text-4xl {
+    margin-bottom: 1rem;
+  }
+  
+  /* SearchBox styles */
+  .max-w-lg {
+    width: 100%;
+  }
+  
+  /* Input and button styles */
+  .border-b-2 {
+    border-width: 0 0 2px 0;
+  }
+  
+  /* ImageGrid styles */
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  /* ImageItem styles */
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .rounded-t-lg {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-gray-600 {
+    color: #718096;
+  }
+  
+  /* Loading state styles */
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  .animate-pulse {
+    animation: placeHolderShimmer 1s linear infinite;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #f6f7f8 8%, #edeef1 38%, #f6f7f8 54%);
+    background-size: 1000px 100%;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
